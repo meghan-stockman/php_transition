@@ -6,13 +6,20 @@
 
   
   <div class="hero">
-  	<div class="row clearfix">
+  	<div class="row">
+
+    <?php if (empty($userName) ) : ?>
+      <h1>Who are you? Login <a href="login.php">here</a></h1>
+
+    <?php else : ?>  
   		<h1>Hello <?php echo $userName ?>, nice to see you again</h1>
-  	</div>
+  	<?php endif; ?>
+
+    </div>
   </div>
 
   <!--Columns -->
-  <div class="row clearfix">
+  <div class="row">
 
   <div class="column one-half">
      <h3>Column Headline</h3>

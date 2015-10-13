@@ -23,16 +23,17 @@ a:hover {
   color: #FB8B6F;
 }
 
-
-.mustache-logo {
-  max-width: 150px;
+.logo {
   float: left;
-  padding: 15px 15px;
- }
+  width: 65px; }
+  @media (max-width: 800px) {
+    .logo {
+      float: none;
+      width: 80px; } }
+
 
 /* Header */
 header {
-  min-height: 150px;	
   background: #ccc;
   padding: 10px;
   margin-bottom: 20px;
@@ -70,6 +71,7 @@ nav a:last-of-type {
 /* Hero */
 .hero {
   background: #ccc;
+  background-image: url(https://images.unsplash.com/photo-1441716844725-09cedc13a4e7?q=80&fm=jpg&s=c895a1f219d174952415b9b7a0811e62);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -98,7 +100,12 @@ footer {
   width: 90%;
   max-width: 800px;
   margin: 0 auto 20px;
-}
+  *zoom: 1; }
+  .row:before, .row:after {
+    content: " ";
+    display: table; }
+  .row:after {
+    clear: both; }
 
 .column {
   float: left;
@@ -119,17 +126,6 @@ footer {
   margin-right: 0;
 }
 
-/* Clearfix */
-.clearfix {
-  *zoom: 1;
-}
 
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-
-.clearfix:after {
-  clear: both;
-}
+iframe {
+  max-width: 100%; }

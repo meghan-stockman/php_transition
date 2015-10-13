@@ -1,6 +1,6 @@
 <?php 
 $pageID = strtolower($pageTitle); 
-$userName = 'Meghan';
+$userName = "";
 ?>
 
 
@@ -20,8 +20,8 @@ $userName = 'Meghan';
   <body id="<?php echo $pageID; ?>">
 
   <header>
-    <div class "row clearfix">
-       <a href="index.php"><img class="mustache-logo" src="images/generic-logo.gif" /></a>
+    <div class="row">
+       <a href="index.php"><img class="logo" src="img/logo.png"/></a>
 
         <?php include 'nav.php'; ?>
 
