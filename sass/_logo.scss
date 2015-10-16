@@ -1,0 +1,16 @@
+.hero {
+  background: #ccc;
+  background-image: url(https://images.unsplash.com/photo-1441716844725-09cedc13a4e7?q=80&fm=jpg&s=c895a1f219d174952415b9b7a0811e62);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+.hero h1 {
+  margin: 0;
+  padding: 120px 0;
+  color: white;
+  text-shadow: 0 0 10px #444;
+  text-align: center;
+}

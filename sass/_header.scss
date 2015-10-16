@@ -1,0 +1,43 @@
+header {
+  background: $grey;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Cancel the header margin on home page. */
+body#home header {
+  margin-bottom: 0;
+}
+
+header .row {
+  margin-bottom: 0;
+}
+
+nav {
+  margin-top: 21px;
+}
+
+header nav {
+  float: right;
+  text-align: right;
+}
+
+nav a {
+  margin-right: 20px;
+  font-size: 13px;
+  color: #444;
+  text-decoration: none;
+}
+
+nav a:last-of-type {
+  margin: 0;
+}
+
+
+.logo {
+  float: left;
+  width: 65px; }
+  @media (max-width: $tablet) {
+    .logo {
+      float: none;
+      width: 80px; } }

@@ -1,0 +1,32 @@
+.row {
+  width: 90%;
+  max-width: $tablet;
+  margin: 0 auto 20px;
+  @include clearfix;
+}
+
+
+ 
+.column {
+  float: left;
+  margin-right: 2%;
+}
+
+.column.two-third {
+  width: 65%;
+}
+.column.one-half {
+  width: 49%;
+}
+.column.one-third {
+  width: 32%
+}
+
+.column:last-of-type {
+  margin-right: 0;
+}
+
+@media (max-width: $phone) {
+	width: 100% !important;
+	margin-right: 0;
+}

@@ -1,0 +1,16 @@
+ body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', helvetica, sans-serif;
+}
+
+a {
+  @include ease;
+}
+
+a:hover {
+  color: #FB8B6F;
+}
+
+iframe {
+  max-width: 100%; }
