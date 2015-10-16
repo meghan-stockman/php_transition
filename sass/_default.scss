@@ -6,11 +6,11 @@
 
 a {
   @include ease;
-}
 
-a:hover {
+
+&:hover {
   color: #FB8B6F;
-}
+} }
 
 iframe {
   max-width: 100%; }

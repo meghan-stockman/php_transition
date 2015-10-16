@@ -10,23 +10,24 @@
 .column {
   float: left;
   margin-right: 2%;
-}
 
-.column.two-third {
-  width: 65%;
-}
-.column.one-half {
-  width: 49%;
-}
-.column.one-third {
-  width: 32%
-}
 
-.column:last-of-type {
-  margin-right: 0;
-}
+  &.two-third {
+    width: 65%;
+  }
+  &.one-half {
+    width: 49%;
+  }
+  &.one-third {
+    width: 32%
+  }
 
-@media (max-width: $phone) {
-	width: 100% !important;
-	margin-right: 0;
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  @media (max-width: $phone) {
+  	width: 100% !important;
+  	margin-right: 0;
+  }
 }

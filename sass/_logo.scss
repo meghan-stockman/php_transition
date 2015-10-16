@@ -4,13 +4,14 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-}
 
 
-.hero h1 {
-  margin: 0;
-  padding: 120px 0;
-  color: white;
-  text-shadow: 0 0 10px #444;
-  text-align: center;
+
+  & h1 {
+    margin: 0;
+    padding: 120px 0;
+    color: white;
+    text-shadow: 0 0 10px $dark-grey;
+    text-align: center;
+  }
 }

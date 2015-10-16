@@ -1,0 +1,11 @@
+@for $i from 1 through 20 {
+	@if $i <= 10 {
+	.item-#{$i} {
+		margin-left: 10px * $i
+		}
+	}
+	@else {
+		margin-left: 4px * $i
+		}
+}
+//pesticides css chrome extension!
