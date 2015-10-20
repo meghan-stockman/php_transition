@@ -38,8 +38,10 @@ nav {
 
 .logo {
   float: left;
-  width: 65px; }
-  @media (max-width: $tablet) {
-    .logo {
+  width: 65px; 
+  @include breakpoint(tablet) {
+    
       float: none;
-      width: 80px; } }
+      width: 80px; 
+  }
+}

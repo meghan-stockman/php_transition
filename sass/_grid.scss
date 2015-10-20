@@ -10,8 +10,7 @@
 .column {
   float: left;
   margin-right: 2%;
-
-
+  
   &.two-third {
     width: 65%;
   }
@@ -26,8 +25,8 @@
     margin-right: 0;
   }
 
-  @media (max-width: $phone) {
+  @include breakpoint(phone) {
   	width: 100% !important;
-  	margin-right: 0;
+    margin-right: 0;
   }
 }
