@@ -1,0 +1,11 @@
+/* Buttons*/
+
+.button {
+	&.blue {
+	@include button(blue);
+	}
+
+	&.pink{
+	@include button(pink);
+	}
+}

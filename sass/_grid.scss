@@ -25,6 +25,12 @@
     margin-right: 0;
   }
 
+  h3 {
+    @include breakpoint(phone) {
+    text-align: center;
+    }
+  }
+
   @include breakpoint(phone) {
   	width: 100% !important;
     margin-right: 0;

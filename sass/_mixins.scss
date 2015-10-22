@@ -21,10 +21,10 @@
 
  //Breakpoints
  $breakpoints: (
- 	'phone': (max-width: 400px),
- 	'tablet': (max-width: 800px),
- 	'laptop': (max-width: 1024px),
- 	'large': (min-width: 1921px)
+ 	'phone': ( max-width: 400px ),
+ 	'tablet': ( max-width: 800px ),
+ 	'laptop': ( max-width: 1024px ),
+ 	'large': ( min-width: 1921px )
  );
 
 @mixin breakpoint($size) {
@@ -36,4 +36,23 @@
 	@else {
 		@warn "Couldn't find a breakpoint named '#{$size}'.";
 	}
+}
+
+@mixin button($color) {
+  background: $color;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px darken($color, 40%);
+ 
+  @if $color == white or $color == #ccc {
+  color: black;
+  }
+  @else {
+    color:white;
+  }
+
+  &.outline {
+  background: none;
+  color: $color;
+  border: 2px solid $color;
+  }
 }
